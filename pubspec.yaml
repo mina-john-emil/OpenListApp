@@ -1,0 +1,7 @@
+name: openlist_flutter_workspace
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+dependencies:
+dev_dependencies:

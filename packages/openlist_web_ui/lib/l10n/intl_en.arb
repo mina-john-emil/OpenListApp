@@ -1,0 +1,32 @@
+{
+  "app_title": "OpenList",
+
+  "username": "Username",
+  "modify_password": "Modify password",
+  "password": "Password",
+
+  "modify": "Modify",
+  "please_input_new_value": "Please input new value",
+  "new_value": "New value",
+  "cancel": "Cancel",
+  "ok": "OK",
+
+  "login": "Login",
+  "privacy_policy": "Privacy Policy",
+
+  "app_name": "App name:",
+  "package_name": "Package name:",
+  "version": "Version:",
+  "version_sn": "Version sn:",
+  "icp_number": "APP ICP number:",
+  "online_feedback": "Online feedback",
+  "app_info": "App info",
+
+  "name": "Name",
+  "port": "Port",
+  "description": "Description",
+
+  "downloadThisFile": "Download This File",
+  "download": "Download",
+  "copiedToClipboard": "Copied To Clipboard"
+}

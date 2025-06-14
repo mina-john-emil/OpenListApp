@@ -1,0 +1,144 @@
+import 'dart:async';
+
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+
+import '../../config/config.dart';
+import '../../l10n/generated/openlist_web_ui_localizations.dart';
+import '../../utils/toast.dart';
+import '../../widgets/goToUrl.dart';
+
+class AppInfoPage extends StatefulWidget {
+  AppInfoPage({required Key key}) : super(key: key);
+
+  @override
+  _AppInfoPageState createState() => _AppInfoPageState();
+}
+
+class _AppInfoPageState extends State<AppInfoPage> {
+  //APP名称
+  String appName = "";
+
+  //包名
+  String packageName = "";
+
+  //版本名
+  String version = "";
+  String aListVersion = "";
+
+  //版本号
+  String buildNumber = "";
+
+  @override
+  void initState() {
+    super.initState();
+    _getAppInfo();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final List _result = [];
+    _result.add("${OpenListWebUiLocalizations.of(context).app_name}$appName");
+    _result.add("${OpenListWebUiLocalizations.of(context).package_name}$packageName");
+    _result.add("${OpenListWebUiLocalizations.of(context).version}$version");
+    _result.add("AList ${OpenListWebUiLocalizations.of(context).version}$aListVersion");
+    _result.add("${OpenListWebUiLocalizations.of(context).version_sn}$buildNumber");
+    _result.add("${OpenListWebUiLocalizations.of(context).icp_number}皖ICP备2022013511号-3A");
+
+    final tiles = _result.map(
+      (pair) {
+        return ListTile(
+          title: Text(
+            pair,
+          ),
+        );
+      },
+    );
+    List<ListTile> tilesList = tiles.toList();
+//     tilesList.add(ListTile(
+//       title: Text(
+//         OpenListWebUiLocalizations.of(context).feedback_channels,
+//         style: TextStyle(color: Colors.green),
+//       ),
+//       onTap: () {
+//         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+// //              return Text("${pair.iP}:${pair.port}");
+//           return FeedbackPage(
+//             key: UniqueKey(),
+//           );
+//         }));
+//       },
+//     ));
+    tilesList.add(ListTile(
+      title: Text(
+          OpenListWebUiLocalizations.of(context).online_feedback,
+        style: TextStyle(color: Colors.green),
+      ),
+      onTap: () {
+        launchURL("https://github.com/AlistMobile/AListWeb");
+      },
+    ));
+    tilesList.add(ListTile(
+      title: Text(
+        OpenListWebUiLocalizations.of(context).privacy_policy,
+        style: TextStyle(color: Colors.green),
+      ),
+      onTap: () {
+        goToURL(context, "https://github.com/AlistMobile/AListWeb",
+            OpenListWebUiLocalizations.of(context).privacy_policy);
+      },
+    ));
+    final divided = ListTile.divideTiles(
+      context: context,
+      tiles: tilesList,
+    ).toList();
+
+    return Scaffold(
+      appBar: AppBar(title: Text(OpenListWebUiLocalizations.of(context).app_info), actions: <Widget>[
+      ]),
+      body: ListView(children: divided),
+    );
+  }
+
+  _getAppInfo() async {
+    PackageInfo.fromPlatform().then((PackageInfo packageInfo) {
+      setState(() {
+        appName = packageInfo.appName;
+        packageName = packageInfo.packageName;
+        version = packageInfo.version;
+        buildNumber = packageInfo.buildNumber;
+      });
+    });
+
+    final dio = Dio(BaseOptions(
+        baseUrl: AListAPIBaseUrl));
+    String reqUri = "/api/public/settings";
+    // String reqUri = "/api/auth/login/hash";
+    try {
+      final response = await dio.getUri(Uri.parse(reqUri));
+      if (response.statusCode == 200 && response.data["code"] == 200) {
+        //  登录成功
+        Map<String, dynamic> data = response.data;
+        print(data["data"]["token"]);
+        setState(() {
+          aListVersion = data["data"]["version"];
+        });
+        return;
+      } else {
+        //  登录失败
+        show_failed("Login failed", context);
+      }
+    } catch (e) {
+      //  登录失败
+      show_failed("Login failed:${e.toString()}", context);
+      print(e.toString());
+      return;
+    }
+  }
+}
