@@ -1,6 +1,8 @@
 name: openlist_native_ui
 description: "A new Flutter openlist native ui project."
 version: 0.0.1
+homepage: https://github.com/OpenListApp
+repository: https://github.com/OpenListApp/openlist_native_ui
 
 environment:
   sdk: ^3.7.2
