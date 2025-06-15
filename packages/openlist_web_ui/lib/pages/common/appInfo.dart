@@ -47,9 +47,9 @@ class _AppInfoPageState extends State<AppInfoPage> {
     _result.add("${OpenListWebUiLocalizations.of(context).app_name}$appName");
     _result.add("${OpenListWebUiLocalizations.of(context).package_name}$packageName");
     _result.add("${OpenListWebUiLocalizations.of(context).version}$version");
-    _result.add("AList ${OpenListWebUiLocalizations.of(context).version}$aListVersion");
+    _result.add("OpenList ${OpenListWebUiLocalizations.of(context).version}$aListVersion");
     _result.add("${OpenListWebUiLocalizations.of(context).version_sn}$buildNumber");
-    _result.add("${OpenListWebUiLocalizations.of(context).icp_number}皖ICP备2022013511号-3A");
+    // _result.add("${OpenListWebUiLocalizations.of(context).icp_number}皖ICP备2022013511号-3A");
 
     final tiles = _result.map(
       (pair) {
@@ -75,25 +75,26 @@ class _AppInfoPageState extends State<AppInfoPage> {
 //         }));
 //       },
 //     ));
-    tilesList.add(ListTile(
-      title: Text(
-          OpenListWebUiLocalizations.of(context).online_feedback,
-        style: TextStyle(color: Colors.green),
-      ),
-      onTap: () {
-        launchURL("https://github.com/AlistMobile/AListWeb");
-      },
-    ));
-    tilesList.add(ListTile(
-      title: Text(
-        OpenListWebUiLocalizations.of(context).privacy_policy,
-        style: TextStyle(color: Colors.green),
-      ),
-      onTap: () {
-        goToURL(context, "https://github.com/AlistMobile/AListWeb",
-            OpenListWebUiLocalizations.of(context).privacy_policy);
-      },
-    ));
+//     TODO 支持信息待修改更新，旧代码是其他项目移植过来的
+//     tilesList.add(ListTile(
+//       title: Text(
+//           OpenListWebUiLocalizations.of(context).online_feedback,
+//         style: TextStyle(color: Colors.green),
+//       ),
+//       onTap: () {
+//         launchURL("https://github.com/OpenListApp/OpenListApp");
+//       },
+//     ));
+//     tilesList.add(ListTile(
+//       title: Text(
+//         OpenListWebUiLocalizations.of(context).privacy_policy,
+//         style: TextStyle(color: Colors.green),
+//       ),
+//       onTap: () {
+//         goToURL(context, "https://github.com/OpenListApp/OpenListApp",
+//             OpenListWebUiLocalizations.of(context).privacy_policy);
+//       },
+//     ));
     final divided = ListTile.divideTiles(
       context: context,
       tiles: tilesList,
