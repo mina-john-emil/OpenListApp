@@ -1,5 +1,5 @@
 {
-  "app_title": "雲億連",
+  "app_title": "OpenList",
 
   "account_and_safety": "賬號及安全",
   "mobile_number": "電話號碼",
@@ -45,7 +45,7 @@
   "download": "下載",
   "copiedToClipboard": "拷貝到剪切板",
 
-  "aListWebLogin": "AListWeb登錄",
+  "aListWebLogin": "OpenList登錄",
   "storages": "存儲",
   "tasks": "任務",
   "files": "文件",

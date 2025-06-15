@@ -25,9 +25,9 @@ For OpenListApp mobile APP background service
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.swift_version = '5.0'
 
-#   s.dependency 'AListMobile' , '0.0.3'
+  s.dependency 'AListMobile' , '0.0.2'
 #   s.dependency 'AListMobile' , '~> 0.0.3'
-  s.dependency 'AListMobile'
+#   s.dependency 'AListMobile'
   s.static_framework = true
 
 

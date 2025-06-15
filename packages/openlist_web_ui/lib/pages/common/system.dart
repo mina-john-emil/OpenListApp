@@ -26,7 +26,7 @@ class _SystemPageState extends State<SystemPage> {
   Widget build(BuildContext context) {
     final List _result = [];
     // AList固定信息
-    _result.add("AListWebAPIBaseUrl: $AListWebAPIBaseUrl");
+    _result.add("OpenListAPIBaseUrl: $OpenListAPIBaseUrl");
     _result.add("AListAPIBaseUrl: $AListAPIBaseUrl");
     _result.add("WebPageBaseUrl: $WebPageBaseUrl");
 

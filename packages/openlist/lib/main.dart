@@ -54,6 +54,7 @@ class MyApp extends StatelessWidget {
         print("locales:$locales");
         return;
       },
+      // TODO 后面可以选界面，待原生界面完善再全面切换原生界面
       // home: const WebScreen(),
       // home: Platform.isMacOS?SplashImagePage():WebScreen(),
       // home: HomePage(),

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:openlist_web_ui/l10n/generated/openlist_web_ui_localizations.dart';
 import 'package:openlist_web_ui/pages/storages/StoragesPage.dart';
 import 'package:openlist_web_ui/pages/tasks/TasksPage.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +80,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(title: Text(OpenLocalizations.of(context).app_title),),
+        // appBar: AppBar(title: Text(OpenListWebUiLocalizations.of(context).app_title),),
         key: _scaffoldKey,
         // drawer: DrawerUI(),
         body: _buildBody(_currentIndex),

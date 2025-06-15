@@ -1,5 +1,5 @@
 {
-  "app_title": "AListWeb",
+  "app_title": "OpenList",
 
   "account_and_safety": "账号及安全",
   "mobile_number": "电话号码",
@@ -45,7 +45,7 @@
   "download": "下载",
   "copiedToClipboard": "拷贝到剪切板",
 
-  "aListWebLogin": "AListWeb登录",
+  "aListWebLogin": "OpenList登录",
   "storages": "存储",
   "tasks": "任务",
   "files": "文件",

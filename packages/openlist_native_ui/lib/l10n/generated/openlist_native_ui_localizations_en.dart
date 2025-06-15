@@ -9,7 +9,7 @@ class OpenlistNativeUiLocalizationsEn extends OpenlistNativeUiLocalizations {
   OpenlistNativeUiLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get app_title => 'AListWeb';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => 'Account and safety';
@@ -123,7 +123,7 @@ class OpenlistNativeUiLocalizationsEn extends OpenlistNativeUiLocalizations {
   String get copiedToClipboard => 'Copied To Clipboard';
 
   @override
-  String get aListWebLogin => 'AListWeb Login';
+  String get aListWebLogin => 'OpenList Login';
 
   @override
   String get storages => 'Storages';

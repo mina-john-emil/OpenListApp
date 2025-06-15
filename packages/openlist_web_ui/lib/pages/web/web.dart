@@ -71,7 +71,7 @@ class WebScreenState extends State<WebScreen> {
         child: Scaffold(
           appBar: AppBar(
             // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-            title: Text("AListWeb"),
+            title: Text("OpenList"),
             actions: [
               // IconButton(onPressed: (){_changeDataPath();}, icon: Icon(Icons.file_copy_outlined)),
               IconButton(onPressed: (){_changePassword();}, icon: Icon(Icons.password)),

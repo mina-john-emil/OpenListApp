@@ -9,7 +9,7 @@ class OpenlistNativeUiLocalizationsZh extends OpenlistNativeUiLocalizations {
   OpenlistNativeUiLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get app_title => 'AListWeb';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => '账号及安全';
@@ -123,7 +123,7 @@ class OpenlistNativeUiLocalizationsZh extends OpenlistNativeUiLocalizations {
   String get copiedToClipboard => '拷贝到剪切板';
 
   @override
-  String get aListWebLogin => 'AListWeb登录';
+  String get aListWebLogin => 'OpenList登录';
 
   @override
   String get storages => '存储';
@@ -171,7 +171,7 @@ class OpenlistNativeUiLocalizationsZhCn
   OpenlistNativeUiLocalizationsZhCn() : super('zh_CN');
 
   @override
-  String get app_title => 'AListWeb';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => '账号及安全';
@@ -285,7 +285,7 @@ class OpenlistNativeUiLocalizationsZhCn
   String get copiedToClipboard => '拷贝到剪切板';
 
   @override
-  String get aListWebLogin => 'AListWeb登录';
+  String get aListWebLogin => 'OpenList登录';
 
   @override
   String get storages => '存储';
@@ -333,7 +333,7 @@ class OpenlistNativeUiLocalizationsZhHans
   OpenlistNativeUiLocalizationsZhHans() : super('zh_Hans');
 
   @override
-  String get app_title => 'AListWeb';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => '账号及安全';
@@ -447,7 +447,7 @@ class OpenlistNativeUiLocalizationsZhHans
   String get copiedToClipboard => '拷贝到剪切板';
 
   @override
-  String get aListWebLogin => 'AListWeb登录';
+  String get aListWebLogin => 'OpenList登录';
 
   @override
   String get storages => '存储';
@@ -495,7 +495,7 @@ class OpenlistNativeUiLocalizationsZhHant
   OpenlistNativeUiLocalizationsZhHant() : super('zh_Hant');
 
   @override
-  String get app_title => '雲億連';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => '賬號及安全';
@@ -609,7 +609,7 @@ class OpenlistNativeUiLocalizationsZhHant
   String get copiedToClipboard => '拷貝到剪切板';
 
   @override
-  String get aListWebLogin => 'AListWeb登錄';
+  String get aListWebLogin => 'OpenList登錄';
 
   @override
   String get storages => '存儲';
@@ -657,7 +657,7 @@ class OpenlistNativeUiLocalizationsZhTw
   OpenlistNativeUiLocalizationsZhTw() : super('zh_TW');
 
   @override
-  String get app_title => '雲億連';
+  String get app_title => 'OpenList';
 
   @override
   String get account_and_safety => '賬號及安全';
@@ -771,7 +771,7 @@ class OpenlistNativeUiLocalizationsZhTw
   String get copiedToClipboard => '拷貝到剪切板';
 
   @override
-  String get aListWebLogin => 'AListWeb登錄';
+  String get aListWebLogin => 'OpenList登錄';
 
   @override
   String get storages => '存儲';

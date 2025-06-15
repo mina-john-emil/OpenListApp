@@ -108,7 +108,7 @@ abstract class OpenlistNativeUiLocalizations {
   /// No description provided for @app_title.
   ///
   /// In en, this message translates to:
-  /// **'AListWeb'**
+  /// **'OpenList'**
   String get app_title;
 
   /// No description provided for @account_and_safety.
@@ -336,7 +336,7 @@ abstract class OpenlistNativeUiLocalizations {
   /// No description provided for @aListWebLogin.
   ///
   /// In en, this message translates to:
-  /// **'AListWeb Login'**
+  /// **'OpenList Login'**
   String get aListWebLogin;
 
   /// No description provided for @storages.

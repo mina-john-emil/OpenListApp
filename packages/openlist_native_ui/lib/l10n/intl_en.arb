@@ -1,5 +1,5 @@
 {
-  "app_title": "AListWeb",
+  "app_title": "OpenList",
 
   "account_and_safety": "Account and safety",
   "mobile_number": "Mobile number",
@@ -45,7 +45,7 @@
   "download": "Download",
   "copiedToClipboard": "Copied To Clipboard",
 
-  "aListWebLogin": "AListWeb Login",
+  "aListWebLogin": "OpenList Login",
   "storages": "Storages",
   "tasks": "Tasks",
   "files": "Files",
