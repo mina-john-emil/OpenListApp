@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AListWeb',
+      title: 'OpenList',
       // themeMode: ThemeMode.system,
       theme: CustomThemes.light,
       darkTheme: CustomThemes.dark,
