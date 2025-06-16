@@ -59,8 +59,8 @@ class MyApp extends StatelessWidget {
       // home: Platform.isMacOS?SplashImagePage():WebScreen(),
       // home: HomePage(),
       // home: (Platform.isIOS || Platform.isMacOS)?openlist_web_ui.LoginPage():openlist_native_ui.LoginPage(),
-      // home: openlist_web_ui.LoginPage(),
-      home: openlist_native_ui.LoginPage(),
+      home: openlist_web_ui.LoginPage(),
+      // home: openlist_native_ui.LoginPage(),
     );
   }
 }

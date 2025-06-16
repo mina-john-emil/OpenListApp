@@ -1,6 +1,6 @@
 name: openlist_background_service
 description: For AList mobile APP background service
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://github.com/OpenListApp
 repository: https://github.com/OpenListApp
 
