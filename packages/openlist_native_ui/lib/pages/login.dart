@@ -67,8 +67,8 @@ class _LoginPageState extends State<LoginPage> {
         Padding(
           padding: const EdgeInsets.only(top: 20.0), // 设置顶部距离
           child: Image.asset(
-            'assets/icon/openlist.png',
-            // package: "",
+            'assets/icon/icon.png',
+            package: "openlist_native_ui",
             // 确保路径正确且已在pubspec.yaml中声明
             width: 130,
             height: 130,
